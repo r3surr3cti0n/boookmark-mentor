@@ -1,0 +1,51 @@
+#contact {
+	flex-direction: column;
+	align-items: center;
+	gap: 4em;
+	padding: 6em 2em;
+	background-color: var(--Soft-Blue);
+	color: #fff;
+	min-width: 100vw;
+}
+
+#contact > .flex {
+	flex-direction: column;
+	gap: 2em;
+}
+.contact-text {
+	max-width: 30em;
+	text-align: center;
+}
+
+.contact-sub-title {
+	letter-spacing: 5px;
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+.contact-title {
+	font-size: 2.8rem;
+}
+
+#contact-input-box {
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+
+#contact-input {
+	border: none;
+	border-radius: 0.3em;
+	padding: 1em;
+	flex: 1;
+	flex-grow: 100;
+}
+
+#contact-input::placeholder {
+	color: var(--Grayish-Blue);
+}
+
+.contact-btn {
+	flex-grow: 1;
+}

@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+:root {
+	--container: 1440px;
+	/* colors */
+	--Soft-Blue: hsl(231, 69%, 60%);
+	--Soft-Red: hsl(0, 94%, 66%);
+	--Grayish-Blue: hsl(229, 8%, 60%);
+	--Very-Dark-Blue: hsl(229, 31%, 21%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* reset */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+	min-height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+	min-height: 100vh;
+	width: 100%;
+	font-family: "Rubik", sans-serif;
+	overflow-x: hidden;
+}
+#root {
+	min-height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+#root > * {
+	width: 100%;
+	max-width: var(--container);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul[class] {
+	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.anchor {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	color: white;
+	border-radius: 0.3em;
+	border: none;
+	cursor: pointer;
+	padding: 1em 1.6em;
+	font-weight: 500;
+}
+.bg-blue {
+	background-color: var(--Soft-Blue);
+}
+
+.bg-blue:hover,
+.bg-blue:focus {
+	background-color: #fff;
+	color: var(--Soft-Blue);
+	outline: 2px solid var(--Soft-Blue);
+}
+
+.bg-white {
+	color: var(--Soft-Blue);
+	background-color: hsla(229, 8%, 60%, 0.12);
+}
+
+.bg-white:hover,
+.bg-white:focus {
+	background-color: #fff;
+	color: var(--Very-Dark-Blue);
+	outline: 2px solid var(--Very-Dark-Blue);
+}
+
+.bg-red {
+	background-color: var(--Soft-Red);
+}
+
+.bg-red:hover,
+.bg-red:focus {
+	background-color: #fff;
+	color: var(--Soft-Red);
+	outline: 2px solid var(--Soft-Red);
+}
+
+.sub-title {
+	margin-bottom: 0.5em;
+}
+
+.text-container {
+	text-align: center;
+	max-width: 40em;
 }
