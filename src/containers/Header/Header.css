@@ -29,13 +29,6 @@
 	line-height: 1.6rem;
 }
 
-.get-it:hover,
-.get-it:focus {
-	color: var(--Soft-Blue);
-	background-color: white;
-	outline: 2px solid var(--Soft-Blue);
-}
-
 #header-img {
 	position: relative;
 }
