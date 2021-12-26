@@ -17,11 +17,6 @@ const Nav = () => {
 		<nav
 			id="nav"
 			className="flex"
-			style={
-				showMenu
-					? { position: "absolute", zIndex: 100 }
-					: { position: "relative" }
-			}
 		>
 			<img
 				id="logo"
